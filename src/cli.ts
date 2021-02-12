@@ -1,5 +1,5 @@
 import yargs from 'yargs';
-import LargeFileCopyer from './LargeFileCopyer';
+import LargeFileCopier from './LargeFileCopier';
 import ora from 'ora';
 
 (async () => {
@@ -14,7 +14,7 @@ import ora from 'ora';
 	
 	const spinner = ora(beginCopyText).start();
 	
-	const largeFileCopyer = new LargeFileCopyer(args['from-path'], args['to-path']);
+	const largeFileCopyer = new LargeFileCopier(args['from-path'], args['to-path']);
 	
 	await largeFileCopyer.copy(args['from-line'], args['to-line']);
 	

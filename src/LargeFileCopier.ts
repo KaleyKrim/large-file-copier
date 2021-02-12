@@ -1,7 +1,7 @@
 import * as es from 'event-stream';
 import * as fs from 'fs-extra';
 
-export default class LargeFileCopyer {
+export default class LargeFileCopier {
 	private currentLineNum = 0;
 	private readStream: fs.ReadStream;
 	private writeStream: fs.WriteStream;
